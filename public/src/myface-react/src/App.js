@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import GetPosts from "./Components/GetPosts";
 import GetUserList from "./Components/GetUserList";
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <GetPosts />
       <GetUserList />
-      <GetUserDetails />
+      <GetUserDetails id="58"/>
     </div>
   );
 }
