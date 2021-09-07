@@ -18,16 +18,21 @@ const GetUserDetails = (props) => {
     return <p>No user to show</p>;
   }
 
+  const singleUser = users.filter(user => user.id == props.id)
+  let userWithId = singleUser[0].username
+
   return (
     <div>
-      <p>Trying to display user info</p>
+    {userWithId}
 
-      {users.map(function (user, index) {
-          <p></p>
+      {/* {users.map(function (user, index) {
+          
         return CheckUserId(user, props.id);
-      })}
+      })} */}
     </div>
   );
 };
 
 export default GetUserDetails;
+
+
