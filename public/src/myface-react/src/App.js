@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import GetPosts from "./Components/GetPosts";
 import GetUserList from "./Components/GetUserList";
 import GetUserDetails from "./Components/GetUserDetails";

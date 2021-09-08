@@ -18,12 +18,12 @@ const GetUserDetails = (props) => {
     return <p>No user to show</p>;
   }
 
+  // Getting only the user with matching id passed as props.id
   const singleUser = users.filter(user => user.id == props.id)
   let userWithId = singleUser[0].username
 
   return (
-    <div>
-    {userWithId}
+    <div> User found: {userWithId}
 
       {/* {users.map(function (user, index) {
           
