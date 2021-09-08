@@ -22,9 +22,15 @@ function App() {
     setState(newPage);
   };
 
+  const HomeButton = () => {
+    newPage = <GetPosts />
+    setState(newPage)
+  };
+
   return (
     <div className="App">
       <div>
+      <button onClick={HomeButton}>Home</button>
         <button onClick={UserListButton}>Users</button>
         <button onClick={UserProfileButton}>User Details</button>
       </div>
